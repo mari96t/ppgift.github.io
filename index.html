@@ -496,11 +496,14 @@
     <script>
     var submitButton = document.getElementById("submit_form");
     var form = document.getElementById("email_form");
-    var redirect = "https://ppgift.github.io";
+    var redirect = "https://ppgift.github.io/?message=Email+Successfully+Sent%21&isError=0";
     form.addEventListener("submit", function (e) {
         setTimeout(function() {
             submitButton.value = "Sending...";
             submitButton.disabled = true;
+            window.location.href=redirect;
+            alert(' Форма отправлена, мы свяжемся с вами через 10 минут.');
+
         }, 1);
     });
 </script> 
