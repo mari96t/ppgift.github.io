@@ -496,12 +496,13 @@
     <script>
     var submitButton = document.getElementById("submit_form");
     var form = document.getElementById("email_form");
+    var redirect = "https://vk.com";
     form.addEventListener("submit", function (e) {
         setTimeout(function() {
             submitButton.value = "Sending...";
             submitButton.disabled = true;
             alert(' Форма отправлена, мы свяжемся с вами через 10 минут.');
-            window.location.href="https://vk.com";
+            window.location.href=redirect;
 
         }, 1);
     });
