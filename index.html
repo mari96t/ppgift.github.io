@@ -455,6 +455,7 @@
 <form action="https://postmail.invotes.com/send"
     method="post" id="email_form">
 	<div class="form-group">
+		<input type="text" class="form-control-1" id="email-1" name="extra_phone_number" placeholder="Номер телефона" /> 
 	    <input type="text" class="form-control-1" id="email-1" name="subject" placeholder="Имя" />
 	    <textarea name="text" class="form-control-1" id="email-1" placeholder="Сообщение"></textarea>
 	    <input type="hidden" name="access_token" value="06ndbnrzdfergnjoezli2few" />
@@ -467,8 +468,7 @@
 
 	    <!-- to append extra fields, use the extra_ prefix.
 	        Entries will be appended to your message body. -->
-	    <input type="text" class="form-control-1" id="email-1" name="extra_phone_number"
-	                placeholder="Номер телефона" /> 
+
 
 	    <!-- to split your message into 160 chars
 	         for an sms gateway -->
@@ -476,7 +476,9 @@
 	                name="sms_format" value="true" /> -->
     </div>
    	<div class="form-group">
-	    <input id="submit_form" type="submit" value="Send" />
+	    		<button id="submit_form"  type="submit" class="hvr-radial-out">
+									Subscribe
+			   </button>
 	    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
    </div>
 </form>
