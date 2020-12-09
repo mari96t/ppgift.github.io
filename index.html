@@ -397,81 +397,6 @@
 						</div>
 					</div>
 				</div>
-			<div class="row">
-				
-				<div class="col-lg-7 col-sm-7 col-xs-12">
-				  <div class="contact-block">
-					<form action="https://postmail.invotes.com/send" method="post" id="contactForm">
-						    <input type="hidden" name="access_token" value="06ndbnrzdfergnjoezli2few" />
-						      <!-- return urls can be fully qualified -OR-
-						         start with / for root relative -OR-
-						         start with . for url relative --> 
-						    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-						    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
-					  <div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-								<div class="help-block with-errors"></div>
-							</div>                                 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" placeholder="Your number" id="number" class="form-control" name="number" required data-error="Please enter your number">
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group"> 
-								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-								<div class="help-block with-errors"></div>
-							</div>
-							<div class="submit-button text-center">
-								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-								<div id="msgSubmit" class="h3 text-center hidden"></div> 
-								<div class="clearfix"></div> 
-							</div>
-						</div>
-					  </div>            
-					</form>
-				  </div>
-				</div>
-
-
-				<div class="col-lg-5 col-sm-5 col-xs-12">
-					<div class="left-contact">
-						<div class="media cont-line">
-							<div class="media-left icon-b">
-								<i class="fa fa-location-arrow" aria-hidden="true"></i>
-							</div>
-							<div class="media-body dit-right">
-								<h4>Address</h4>
-								<p>Fleming 196 Woodside Circle Mobile, FL 36602</p>
-							</div>
-						</div>
-						<div class="media cont-line">
-							<div class="media-left icon-b">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-							</div>
-							<div class="media-body dit-right">
-								<h4>Email</h4>
-								<a href="#">demoinfo@gmail.com</a><br>
-								<a href="#">demoinfo@gmail.com</a>
-							</div>
-						</div>
-						<div class="media cont-line">
-							<div class="media-left icon-b">
-								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-							</div>
-							<div class="media-body dit-right">
-								<h4>Phone Number</h4>
-								<a href="#">12345 67890</a><br>
-								<a href="#">12345 67890</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
 
 
 			</div>
@@ -490,6 +415,8 @@
          start with . for url relative --> 
     <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
     <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+  
+
     <!-- to append extra fields, use the extra_ prefix.
         Entries will be appended to your message body. -->
     <input type="text" name="extra_phone_number"
@@ -561,8 +488,8 @@
 	<script src="js/images-loded.min.js"></script>	
     <script src="js/custom.js"></script>
     <script>
-    var submitButton = document.getElementById("submit");
-    var form = document.getElementById("contactForm");
+    var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
     form.addEventListener("submit", function (e) {
         setTimeout(function() {
             submitButton.value = "Sending...";
