@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
+
 /*------------------------------------------------------------------
     IMPORT FILES
 -------------------------------------------------------------------*/
@@ -551,8 +552,8 @@ button:focus{
 	margin-bottom: 30px;
 }
 .title-box h2 {
-    font-size: 75px;
-    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
     color: #e91327;
     font-weight: 400;
     padding: 0;
@@ -630,6 +631,9 @@ button:focus{
 
 .about-main-info div.full > img {
     height: 500px;
+}
+.about-main-info h2{
+    font-family: 'Pattaya', sans-serif;
 }
 
 .hvr-radial-out{
@@ -735,16 +739,16 @@ figure.effect-service h2 {
 
 figure.effect-service h2 {
     background: #e91327;
-    padding: 13px;
+    padding: 16px;
     width: 94%;
     height: 58px;
     border: 0;
     margin: 0;
     font-weight: 200;
-    font-size: 34px;
+    font-size: 18px;
     color: #ffffff;
     text-align: center;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Lobster', cursive;
 }
 
 figure.effect-service p {
